@@ -150,6 +150,7 @@ The `examples/` directory has four to start from:
 - `repo-status`, a generic session-start brief: branch, unpushed commits, worktrees.
 - `pr-review`, a review session in one phrase: the PR, its description, checks, the diff, and the comment history filtered to unresolved review threads, human conversation with bots dropped, and the review verdicts. Say "review pr" on a checked-out branch or "review pr 42".
 - `deploy-status`, the checkout, CI runs, and open pull requests in one phrase, with steps that skip cleanly on a machine without `gh`.
+- `open-artifact`, opens a Claude artifact such as a team dashboard in the browser when you say the phrase, or at session start with `on = ["session-start"]`.
 
 ## Run and inspect
 

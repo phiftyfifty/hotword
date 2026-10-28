@@ -1,0 +1,10 @@
+# Open a Claude artifact, like a team dashboard, when you say the phrase.
+# Replace the link with your artifact's URL. Add on = ["session-start"] to open it with every session.
+name = "open-artifact"
+description = "Open the team dashboard artifact in the browser"
+triggers = ["open the dashboard", "show the dashboard"]
+
+[[steps]]
+name = "open"
+run = 'url="https://claude.ai/code/artifact/YOUR-ARTIFACT-ID"; if command -v xdg-open >/dev/null; then xdg-open "$url"; else open "$url"; fi && echo "opened $url"'
+timeout = 5
